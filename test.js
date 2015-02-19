@@ -9,5 +9,5 @@ mc.get('pan').set({ direction: Hammer.DIRECTION_ALL, velocity:0.1, threshold:1 }
 // listen to events...
 mc.on("panleft panright panup pandown tap press", function(e) {
 	console.log(e);
-    myElement.textContent = ev.type +" gesture detected.";
+    myElement.textContent = e.type +" gesture detected.";
 });
